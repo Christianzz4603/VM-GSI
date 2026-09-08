@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Simple abstract "chip / VM" mark: a rounded square (the device/VM
+     boundary) with a smaller inset square (the virtualized instance inside
+     it) and corner pins suggesting a chip. Kept geometric and simple so it
+     reads clearly at launcher size. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- outer rounded square: the "host device" -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95"
+        android:pathData="M34,30 h40 a4,4 0 0 1 4,4 v40 a4,4 0 0 1 -4,4 h-40 a4,4 0 0 1 -4,-4 v-40 a4,4 0 0 1 4,-4 z" />
+
+    <!-- inner square: the "VM instance" running inside -->
+    <path
+        android:fillColor="#1B1F3B"
+        android:pathData="M46,42 h16 a2,2 0 0 1 2,2 v16 a2,2 0 0 1 -2,2 h-16 a2,2 0 0 1 -2,-2 v-16 a2,2 0 0 1 2,-2 z" />
+
+    <!-- chip pins, top -->
+    <path android:fillColor="#FFFFFF" android:pathData="M44,24 v6 h2 v-6 z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M52,24 v6 h2 v-6 z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M60,24 v6 h2 v-6 z" />
+
+    <!-- chip pins, bottom -->
+    <path android:fillColor="#FFFFFF" android:pathData="M44,78 v6 h2 v-6 z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M52,78 v6 h2 v-6 z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M60,78 v6 h2 v-6 z" />
+
+    <!-- chip pins, left -->
+    <path android:fillColor="#FFFFFF" android:pathData="M24,44 h6 v2 h-6 z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M24,60 h6 v2 h-6 z" />
+
+    <!-- chip pins, right -->
+    <path android:fillColor="#FFFFFF" android:pathData="M78,44 h6 v2 h-6 z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M78,60 h6 v2 h-6 z" />
+</vector>

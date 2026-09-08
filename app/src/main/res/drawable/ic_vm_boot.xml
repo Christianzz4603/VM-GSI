@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
+    <!-- monitor/VM window outline -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M3,4 h18 a1,1 0 0 1 1,1 v11 a1,1 0 0 1 -1,1 h-6 v2 h3 v2 H6 v-2 h3 v-2 H3 a1,1 0 0 1 -1,-1 V5 a1,1 0 0 1 1,-1 z M4,6 v9 h16 V6 z" />
+    <!-- play triangle: boot/run -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M10,8.3 v4.9 l4.2,-2.45 z" />
+</vector>

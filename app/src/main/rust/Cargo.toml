@@ -1,0 +1,18 @@
+[package]
+name = "vmgsi_bootimg"
+version = "0.1.0"
+edition = "2021"
+
+# Rust here, not C/C++: this module parses the Android boot.img header
+# format out of an untrusted, arbitrary-source binary file (the downloaded
+# GSI package). That's exactly the kind of "hostile input, fixed-size binary
+# struct parsing" work where C buffer-overflow bugs are common — Rust's
+# bounds-checked slices remove that whole bug class at compile/runtime
+# instead of relying on careful manual pointer arithmetic.
+
+[lib]
+name = "vmgsi_bootimg"
+crate-type = ["cdylib"]
+
+[dependencies]
+jni = "0.21"
